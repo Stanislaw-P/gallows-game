@@ -98,7 +98,10 @@ namespace gallows_game
                 // Обновляем текст статуса
                 labelNumberAttempts.Text = $"Осталось попыток: {7 - numberAttempts}";
 
-                // Здесь позже добавим смену картинки виселицы (Блок 4)
+                // МЕНЯЕМ КАРТИНКУ ВИСЕЛИЦЫ
+                // В зависимости от numberAttempts загружаем нужный файл (step1, step2 и т.д.)
+                string fileName = $"images/step{numberAttempts}.jpg";
+                pictureBox1.Image = Image.FromFile(fileName);
 
                 // Здесь позже добавим проверку на поражение (Блок 5)
             }
