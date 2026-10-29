@@ -356,7 +356,7 @@
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(45, 49);
             this.button24.TabIndex = 36;
-            this.button24.Text = "A";
+            this.button24.Text = "Ъ";
             this.button24.UseVisualStyleBackColor = true;
             this.button24.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -367,7 +367,7 @@
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(45, 49);
             this.button25.TabIndex = 35;
-            this.button25.Text = "A";
+            this.button25.Text = "Я";
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -378,7 +378,7 @@
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(45, 49);
             this.button26.TabIndex = 34;
-            this.button26.Text = "A";
+            this.button26.Text = "Ю";
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -389,7 +389,7 @@
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(45, 49);
             this.button27.TabIndex = 33;
-            this.button27.Text = "A";
+            this.button27.Text = "Э";
             this.button27.UseVisualStyleBackColor = true;
             this.button27.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -400,7 +400,7 @@
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(45, 49);
             this.button28.TabIndex = 32;
-            this.button28.Text = "A";
+            this.button28.Text = "Ь";
             this.button28.UseVisualStyleBackColor = true;
             this.button28.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -411,7 +411,7 @@
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(45, 49);
             this.button29.TabIndex = 31;
-            this.button29.Text = "A";
+            this.button29.Text = "Ы";
             this.button29.UseVisualStyleBackColor = true;
             this.button29.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -422,7 +422,7 @@
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(45, 49);
             this.button30.TabIndex = 30;
-            this.button30.Text = "A";
+            this.button30.Text = "Щ";
             this.button30.UseVisualStyleBackColor = true;
             this.button30.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -433,7 +433,7 @@
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(45, 49);
             this.button31.TabIndex = 29;
-            this.button31.Text = "A";
+            this.button31.Text = "Ш";
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -444,7 +444,7 @@
             this.button32.Name = "button32";
             this.button32.Size = new System.Drawing.Size(45, 49);
             this.button32.TabIndex = 28;
-            this.button32.Text = "A";
+            this.button32.Text = "Ч";
             this.button32.UseVisualStyleBackColor = true;
             this.button32.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -455,7 +455,7 @@
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(45, 49);
             this.button33.TabIndex = 27;
-            this.button33.Text = "A";
+            this.button33.Text = "Ц";
             this.button33.UseVisualStyleBackColor = true;
             this.button33.Click += new System.EventHandler(this.LetterButton_Click);
             // 
@@ -466,7 +466,7 @@
             this.button34.Name = "button34";
             this.button34.Size = new System.Drawing.Size(45, 49);
             this.button34.TabIndex = 26;
-            this.button34.Text = "A";
+            this.button34.Text = "Х";
             this.button34.UseVisualStyleBackColor = true;
             this.button34.Click += new System.EventHandler(this.LetterButton_Click);
             // 

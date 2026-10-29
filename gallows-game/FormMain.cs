@@ -41,12 +41,23 @@ namespace gallows_game
                 displayWord[i] = '_';
             }
 
-            // 3. Сбрасываем попытки
+            // 3. Сбрасываем попытки и первую картинку
             numberAttempts = 1;
             labelNumberAttempts.Text = "Осталось попыток: 6";
 
+            pictureBox1.Image = Image.FromFile("images/step1.jpg");
+
             // 4. Выводим маску на экран (разделяем пробелами для красоты)
             UpdateWordDisplay();
+
+            // 5. Включаем все кнопки обратно при новой игре (Мы их выключали при победе/поражении)
+            foreach (Control control in this.Controls)
+            {
+                if (control is Button btn)
+                {
+                    btn.Enabled = true;
+                }
+            }
         }
 
         // Вспомогательный метод для обновления текста с маской на форме
@@ -88,7 +99,8 @@ namespace gallows_game
             {
                 UpdateWordDisplay();
 
-                // Здесь позже добавим проверку на победу (Блок 5)
+                // Здесь проверка на победу (Блок 5)
+                CheckGameEnd();
             }
             else
             {
@@ -103,7 +115,48 @@ namespace gallows_game
                 string fileName = $"images/step{numberAttempts}.jpg";
                 pictureBox1.Image = Image.FromFile(fileName);
 
-                // Здесь позже добавим проверку на поражение (Блок 5)
+                // Здесь проверка на поражение (Блок 5)
+                CheckGameEnd();
+            }
+        }
+
+        private void CheckGameEnd()
+        {
+            // Проверка на ПOБЕДУ: если в массиве маски больше нет символа '_'
+            bool hasUnderscore = false;
+            foreach (char c in displayWord)
+            {
+                if (c == '_')
+                {
+                    hasUnderscore = true;
+                    break;
+                }
+            }
+
+            if (!hasUnderscore)
+            {
+                MessageBox.Show("Поздравляем! Вы выиграли!", "Победа");
+                DisableAllLetterButtons(); // Блокируем клавиатуру
+                return;
+            }
+
+            // Проверка на ПОРАЖЕНИЕ: если дошли до 7-й картинки (step7.jpg)
+            if (numberAttempts >= 7)
+            {
+                MessageBox.Show($"Вы проиграли! Было загадано слово: {currentWord}", "Конец игры");
+                DisableAllLetterButtons(); // Блокируем клавиатуру
+            }
+        }
+
+        // Метод для блокировки всех кнопок букв, чтобы нельзя было кликать после окончания игры
+        private void DisableAllLetterButtons()
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control is Button btn && btn != buttonRestart)
+                {
+                    btn.Enabled = false;
+                }
             }
         }
     }
